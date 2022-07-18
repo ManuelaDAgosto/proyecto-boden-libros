@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%; /*1 rem = 10px*/
+    line-height: 3rem; /* interlineado*/
+}
+
+body{
+    font-size: 1.6rem;
+    background-color: #ffffff;
+}
+
+.misDatos{
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+/* MOBILE*/
+
+/* NAV */
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #E9E9AF;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.ulNav{
+    display: none;
+  }
+  
+  input:checked  ~ ul{
+    display:block;
+  }
+  
+#menu {
+    display: none;
+}
+  
+.menu {
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+}
+  
+    input:checked ~ label {
+        background-color: #E9E9AF;
+    }
+  
+    ul{
+        margin-top:0;
+        padding: 0;
+    }
+  
+    li {
+        display: block;
+        background-color: #E9E9AF;
+        margin: 0;
+        list-style: none;
+    }
+
+    nav ul{
+        color: #000;
+        list-style: none;
+    }
+
+    nav ul li{
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+
+    nav ul li a{
+        color: #000;
+        text-decoration: none;
+    }
+
+    .navDesktop{
+        display: none;
+    }
+
+/* FOOTER */
+
+footer{
+    text-align: center;
+    background-color: #E9E9AF;
+}
+
+footer div ul li{
+    display: inline-block;
+}
+
+.redes{
+    height: 3rem;
+    width: 3rem;
+}
+
+/* INDICE */
+
+.mainIndex{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.introIndex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-image: url(../images/fondo-hojas.png);
+    background-position: 50% 50%;
+    text-align: center;
+}
+
+.descBoden, .h2index{
+    background-color: white;
+    width: fit-content;
+    padding: 1rem;
+    margin: 1rem;
+    border-color: #000;
+    border-style: solid;
+}
+
+.indexEntregasAnteriores{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+    grid-template-areas: 
+    "titulo titulo"
+    "horda balada"
+    "viento cielo"
+    "coronel salvatierra"
+    "uruguaya rio";
+    grid-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.indexEntregasAnteriores img{
+    margin: 2rem;
+    width: 100%;
+    height: auto;
+}
+
+/* GRID AREAS DEL INDEX */
+
+.h2index{
+    grid-area: titulo;
+    text-align: center;
+}
+
+.tapaHorda{
+    grid-area: horda;
+}
+
+.tapaBalada{
+    grid-area: balada;
+}
+
+.tapaViento{
+    grid-area: viento;
+}
+
+.tapaCielo{
+    grid-area: cielo;
+}
+
+.tapaCoronel{
+    grid-area: coronel;
+}
+
+.tapaSalvatierra{
+    grid-area: salvatierra;
+}
+
+.tapaUruguaya{
+    grid-area: uruguaya;
+}
+
+.tapaRio{
+    grid-area: rio;
+}
+
+/* SUSCRIPCIONES */
+
+.mainSuscripciones{
+    display: flex;
+    flex-direction: column;
+}
+
+.introSuscripciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-image: url(../images/fondo-hojas.png);
+    background-position: 50% 50%;
+    text-align: center;
+}
+
+.contenedorSuscripciones{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.boxSuscripcion{
+    border: solid;
+    margin: 1rem;
+    background-color: #f5f5dc;
+    height: fit-content;
+}
+
+.lomos{
+    width: 80%;
+    padding-top: 2rem;
+}
+
+/* ENTREGAS ANTERIORES */
+
+.mainEntregasAnteriores, .tapasAnteriores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.introEntregasAnteriores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-image: url(../images/fondo-hojas.png);
+    background-position: 50% 50%;
+    text-align: center;
+}
+
+.tapasAnteriores{
+    padding: 2rem;
+}
+
+.divLibros{
+    padding: 1rem;
+    line-height: 2rem;
+}
+
+.titulo{
+    padding: 1rem;
+}
+
+/* CLUB */
+
+.mainCLub{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+
+.introClub{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-image: url(../images/fondo-hojas.png);
+    background-position: 50% 50%;
+    text-align: center;
+}
+
+.sectionClub{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionClub img{
+    padding: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.masOpiniones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.opiniones{
+    background-color: #E9E9AF;
+    margin: 1rem; 
+    padding: 1rem;   
+}
+
+/* GRID CLUB */
+
+.tuOpinion{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 2 fr 1fr;
+    grid-template-areas: 
+    "nombre"
+    "name"
+    "tituloOp"
+    "opinion"
+    "enviar";
+    grid-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nombre{
+    grid-area: nombre;
+}
+
+#name{
+    grid-area: name;
+}
+
+.tituloOpinion{
+    grid-area: tituloOp;
+}
+
+#opinion{
+    grid-area: opinion;
+}
+
+.enviar{
+    grid-area: enviar;
+}
+
+/* CONSULTAS */
+
+.mainConsultas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.introConsultas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-image: url(../images/fondo-hojas.png);
+    background-position: 50% 50%;
+    text-align: center;
+}
+.pregFrecuentes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.pregunta{
+    background-color: #E9E9AF;
+    margin: 1rem; 
+    padding: 1rem;
+}
+
+
+.masDudas, .newsletter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* DESKTOP */
+
+@media only screen and (min-width: 768px){
+
+    /* NAV */
+
+        nav{
+            display: none;
+        }
+
+        .navDesktop{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul{
+            color: #000;
+            list-style: none;
+        }
+        
+            nav ul li{
+                display: inline-block;
+                padding-left: 1rem;
+                padding-top: 1rem;
+            }
+        
+            nav ul li a{
+                color: #000;
+                text-decoration: none;
+                
+            }
+        
+            nav ul li a:hover{
+                color: black;
+                font-weight: 600;
+            }
+
+    /* INDEX */
+
+        .indexEntregasAnteriores{
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: 0.5fr 2fr;
+            grid-template-areas: 
+            "h2index h2index h2index h2index h2index h2index h2index h2index"
+            "horda balada viento cielo coronel salvatierra uruguaya rio";
+            justify-items: center;
+            align-items: center;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .h2index{
+            grid-area: h2index;
+        }
+
+    /* SUSCRIPCIONES */
+
+        .contenedorSuscripciones{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+    /* ENTREGAS ANTERIORES */
+
+        .divLibros{
+            width: 25%;
+        }
+
+        .tapasAnteriores{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        flex-wrap: wrap;
+        }
+
+        .salvatierra{
+            display: none;
+        }
+
+    /* CLUB */  
+    
+        .sectionClub{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .tuOpinion{
+            display: flex;
+            flex-direction: column;
+            align-items: normal;
+        }
+
+        .opiniones{
+            width: 70%;
+        }
+
+        /* CONSULTAS */
+
+        
+
+} 
