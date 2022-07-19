@@ -433,7 +433,6 @@ footer div ul li{
             nav ul li a{
                 color: #000;
                 text-decoration: none;
-                
             }
         
             nav ul li a:hover{
@@ -460,12 +459,22 @@ footer div ul li{
             grid-area: h2index;
         }
 
+        .tapa:hover{
+            transform: translateY(-20px);
+        }
+
     /* SUSCRIPCIONES */
 
         .contenedorSuscripciones{
             width: 100%;
             display: flex;
             flex-direction: row;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+
+        .boxSuscripcion:hover{
+            transform: scale(1.1);
         }
 
     /* ENTREGAS ANTERIORES */
@@ -486,7 +495,7 @@ footer div ul li{
         }
 
     /* CLUB */  
-    
+
         .sectionClub{
             display: flex;
             flex-direction: row;
@@ -498,8 +507,16 @@ footer div ul li{
             align-items: normal;
         }
 
+        .masOpiniones{
+            padding-bottom: 2rem;
+        }
+
         .opiniones{
             width: 70%;
+        }
+
+        .opiniones:hover{
+            transform: scale(1.2);
         }
 
         /* CONSULTAS */
