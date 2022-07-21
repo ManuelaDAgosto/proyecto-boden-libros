@@ -21,83 +21,21 @@ body{
     text-align: center;
 }
 
-/* MOBILE*/
+/* COLORES */
 
-/* NAV */
+.bg-pale{
+    background-color: #E9E9AF;
+}
+
+/* MOBILE*/ 
 
 header{
     position: sticky;
     top: 0;
     left: 0;
-    background-color: #E9E9AF;
     width: 100%;
+    z-index: 1;
 }
-
-nav{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 10px;
-}
-
-.ulNav{
-    display: none;
-  }
-  
-  input:checked  ~ ul{
-    display:block;
-  }
-  
-#menu {
-    display: none;
-}
-  
-.menu {
-    padding: 5px;
-    box-sizing: border-box;
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    font-weight: bold;
-    text-align: center;
-    user-select: none;
-}
-  
-    input:checked ~ label {
-        background-color: #E9E9AF;
-    }
-  
-    ul{
-        margin-top:0;
-        padding: 0;
-    }
-  
-    li {
-        display: block;
-        background-color: #E9E9AF;
-        margin: 0;
-        list-style: none;
-    }
-
-    nav ul{
-        color: #000;
-        list-style: none;
-    }
-
-    nav ul li{
-        padding-left: 1rem;
-        padding-top: 1rem;
-    }
-
-    nav ul li a{
-        color: #000;
-        text-decoration: none;
-    }
-
-    .navDesktop{
-        display: none;
-    }
 
 /* FOOTER */
 
@@ -229,7 +167,6 @@ footer div ul li{
     flex-direction: column;
     width: 90%;
     padding: 1rem 1rem;
-    display: flex;
     justify-content: space-around;
     text-align: center;
 }
@@ -408,37 +345,6 @@ footer div ul li{
 
 @media only screen and (min-width: 768px){
 
-    /* NAV */
-
-        nav{
-            display: none;
-        }
-
-        .navDesktop{
-            display: flex;
-            justify-content: space-around;
-        }
-
-        nav ul{
-            color: #000;
-            list-style: none;
-        }
-        
-            nav ul li{
-                display: inline-block;
-                padding-left: 1rem;
-                padding-top: 1rem;
-            }
-        
-            nav ul li a{
-                color: #000;
-                text-decoration: none;
-            }
-        
-            nav ul li a:hover{
-                color: black;
-                font-weight: 600;
-            }
 
     /* INDEX */
 
@@ -490,10 +396,10 @@ footer div ul li{
         flex-wrap: wrap;
         }
 
-        .salvatierra{
-            display: none;
+        .coronel, .salvatierra, .uruguaya{
+            display: none; /*SOLUCION TEMPORAL PORQUE NO SABIA QUE MAS HACER XD LOL*/
         }
-
+        
     /* CLUB */  
 
         .sectionClub{
@@ -519,8 +425,6 @@ footer div ul li{
             transform: scale(1.2);
         }
 
-        /* CONSULTAS */
-
-        
+        /* CONSULTAS */   
 
 } 

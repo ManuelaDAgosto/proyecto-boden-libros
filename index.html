@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- MI CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/favicon.png">
     <title> BODEN - Suscripción Literaria </title>
@@ -13,47 +16,30 @@
 
     <header>
 
-        <nav>
-
-            <a href="index.html"> <img src="images/logo.png" alt="BODEN"> </a>
-            
-            <div>
-                <input type="checkbox" id="menu">
-                <label for="menu" class="menu"> ☰ </label>
-                <ul class="ulNav">
-                    <li> <a href="index.html"> INDICE</a> </li>
-                    <li> <a href="suscripciones.html"> SUSCRIPCIONES </a> </li>
-                    <li> <a href="entregas-anteriores.html"> ENTREGAS ANTERIORES </a> </li>
-                    <li> <a href="club.html"> CLUB </a> </li>
-                    <li> <a href="consultas.html"> CONSULTAS </a> </li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-pale">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"> <img src="images/logo.png" alt="BODEN"> </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="suscripciones.html">SUSCRIPCIONES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="entregas-anteriores.html"> ENTREGAS ANTERIORES </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="club.html">CLUB</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="consultas.html">CONSULTAS</a>
+                  </li>
                 </ul>
+              </div>
             </div>
-
-        </nav>
-
-        <nav class="navDesktop">
-
-            <a href="index.html"> <img src="images/logo.png" alt="BODEN"> </a>
-            
-            <ul>
-                <li>
-                    <a href="index.html"> INICIO </a>
-                </li>
-                <li>
-                    <a href="suscripciones.html"> SUSCRIPCIÓN </a>
-                </li>
-                <li>
-                    <a href="entregas-anteriores.html"> ENTREGAS ANTERIORES </a>
-                </li>
-                <li>
-                    <a href="club.html"> CLUB </a>
-                </li>
-                <li>
-                    <a href="consultas.html"> CONSULTAS </a>
-                </li>
-            </ul>
-
-        </nav>
+          </nav>
         
     </header>
 
@@ -63,6 +49,35 @@
             <h3 class="descBoden">CADA MES EN TU CASA</h3>
             <h4 class="descBoden">RECIBÍ CADA MES UNA NOVEDAD O CLÁSICO LITERARIO EN LA PUERTA DE TU CASA. DATE UN GUSTO CON ESTA CUIDADOSA SELECCIÓN DE LIBROS PARA VOS O PARA REGALAR</h4>
         </div>
+
+        <!-- CARROUSEL -->
+        <div id="carouselExampleIndicators" class="carousel slide p-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/biblioteca/biblio2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/biblioteca/biblio1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/biblioteca/biblio3.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- ENDS CARROUSEL -->
 
         <div class="indexEntregasAnteriores"> 
             
@@ -98,6 +113,9 @@
     <div>
         <p class="misDatos"> MANUELA D'AGOSTO - Estudiante de <a href="https://www.coderhouse.com/" target="_blank"> <b> CODER HOUSE </b> </a> Comision 37195</p>
     <div>
+
+    <!-- BOOTSTRAP -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 
