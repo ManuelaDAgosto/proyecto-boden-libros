@@ -16,11 +16,6 @@ body{
     background-color: #ffffff;
 }
 
-.misDatos{
-    font-size: 1.4rem;
-    text-align: center;
-}
-
 /* COLORES */
 
 .bg-pale{
@@ -37,10 +32,16 @@ header{
     z-index: 1;
 }
 
+nav ul li a:hover{
+    font-weight: bold;
+}
+
 /* FOOTER */
 
 footer{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     background-color: #E9E9AF;
 }
 
@@ -53,23 +54,21 @@ footer div ul li{
     width: 3rem;
 }
 
-/* INDICE */
-
-.mainIndex{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+.misDatos{
+    font-size: 1.4rem;
+    text-align: center;
 }
 
-.introIndex{
+/* INDEX */
+
+.intro{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: fit-content;
-    background-image: url(../images/fondo-hojas.png);
-    background-position: 50% 50%;
+    background-color: #E9E9AF;
     text-align: center;
 }
 
@@ -82,67 +81,6 @@ footer div ul li{
     border-style: solid;
 }
 
-.indexEntregasAnteriores{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
-    grid-template-areas: 
-    "titulo titulo"
-    "horda balada"
-    "viento cielo"
-    "coronel salvatierra"
-    "uruguaya rio";
-    grid-gap: 1rem;
-    justify-items: center;
-    align-items: center;
-    padding: 1rem;
-}
-
-.indexEntregasAnteriores img{
-    margin: 2rem;
-    width: 100%;
-    height: auto;
-}
-
-/* GRID AREAS DEL INDEX */
-
-.h2index{
-    grid-area: titulo;
-    text-align: center;
-}
-
-.tapaHorda{
-    grid-area: horda;
-}
-
-.tapaBalada{
-    grid-area: balada;
-}
-
-.tapaViento{
-    grid-area: viento;
-}
-
-.tapaCielo{
-    grid-area: cielo;
-}
-
-.tapaCoronel{
-    grid-area: coronel;
-}
-
-.tapaSalvatierra{
-    grid-area: salvatierra;
-}
-
-.tapaUruguaya{
-    grid-area: uruguaya;
-}
-
-.tapaRio{
-    grid-area: rio;
-}
-
 /* SUSCRIPCIONES */
 
 .mainSuscripciones{
@@ -150,32 +88,18 @@ footer div ul li{
     flex-direction: column;
 }
 
-.introSuscripciones{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
-    background-image: url(../images/fondo-hojas.png);
-    background-position: 50% 50%;
-    text-align: center;
-}
-
 .contenedorSuscripciones{
     display: flex;
-    flex-direction: column;
-    width: 90%;
-    padding: 1rem 1rem;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
     text-align: center;
 }
 
 .boxSuscripcion{
     border: solid;
-    margin: 1rem;
     background-color: #f5f5dc;
     height: fit-content;
+    width: 30%;
 }
 
 .lomos{
@@ -184,30 +108,6 @@ footer div ul li{
 }
 
 /* ENTREGAS ANTERIORES */
-
-.mainEntregasAnteriores, .tapasAnteriores{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.introEntregasAnteriores{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
-    background-image: url(../images/fondo-hojas.png);
-    background-position: 50% 50%;
-    text-align: center;
-}
-
-.tapasAnteriores{
-    padding: 2rem;
-}
 
 .divLibros{
     padding: 1rem;
@@ -226,21 +126,9 @@ footer div ul li{
         justify-content: center;
 }
 
-.introClub{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
-    background-image: url(../images/fondo-hojas.png);
-    background-position: 50% 50%;
-    text-align: center;
-}
-
 .sectionClub{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -309,17 +197,6 @@ footer div ul li{
     justify-content: center;
 }
 
-.introConsultas{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
-    background-image: url(../images/fondo-hojas.png);
-    background-position: 50% 50%;
-    text-align: center;
-}
 .pregFrecuentes{
     display: flex;
     flex-direction: column;
@@ -333,27 +210,29 @@ footer div ul li{
     padding: 1rem;
 }
 
-
-.masDudas, .newsletter{
+.preForm{
     display: flex;
-    flex-direction: column;
+    align-content: center;
     justify-content: center;
-    padding: 1rem;
+}
+
+.preForm h4{
+    width: 100%;
+    text-align: center;
 }
 
 /* DESKTOP */
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 1200px){
 
 
     /* INDEX */
 
-        .indexEntregasAnteriores{
+        .gridIndex{
             display: grid;
             grid-template-columns: repeat(8, 1fr);
-            grid-template-rows: 0.5fr 2fr;
+            grid-template-rows: 1fr;
             grid-template-areas: 
-            "h2index h2index h2index h2index h2index h2index h2index h2index"
             "horda balada viento cielo coronel salvatierra uruguaya rio";
             justify-items: center;
             align-items: center;
@@ -361,13 +240,43 @@ footer div ul li{
             margin-bottom: 2rem;
         }
 
-        .h2index{
-            grid-area: h2index;
-        }
+         /* GRID AREAS DEL INDEX */
+
+    .tapaHorda{
+        grid-area: horda;
+    }
+
+    .tapaBalada{
+        grid-area: balada;
+    }
+
+    .tapaViento{
+        grid-area: viento;
+    }
+
+    .tapaCielo{
+        grid-area: cielo;
+    }
+
+    .tapaCoronel{
+        grid-area: coronel;
+    }
+
+    .tapaSalvatierra{
+        grid-area: salvatierra;
+    }
+
+    .tapaUruguaya{
+        grid-area: uruguaya;
+    }
+
+    .tapaRio{
+        grid-area: rio;
+    }
 
         .tapa:hover{
             transform: translateY(-20px);
-        }
+        } /*MOVER PARA QUE SEA ANTES DE 1200*/
 
     /* SUSCRIPCIONES */
 
@@ -375,30 +284,12 @@ footer div ul li{
             width: 100%;
             display: flex;
             flex-direction: row;
-            padding-top: 4rem;
-            padding-bottom: 4rem;
         }
 
         .boxSuscripcion:hover{
             transform: scale(1.1);
         }
 
-    /* ENTREGAS ANTERIORES */
-
-        .divLibros{
-            width: 25%;
-        }
-
-        .tapasAnteriores{
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
-        flex-wrap: wrap;
-        }
-
-        .coronel, .salvatierra, .uruguaya{
-            display: none; /*SOLUCION TEMPORAL PORQUE NO SABIA QUE MAS HACER XD LOL*/
-        }
         
     /* CLUB */  
 
@@ -425,6 +316,6 @@ footer div ul li{
             transform: scale(1.2);
         }
 
-        /* CONSULTAS */   
-
+        
+        
 } 

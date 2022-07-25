@@ -47,7 +47,7 @@
 
         <div>
 
-            <div class="introConsultas">
+            <div class="intro">
 
                 <h1 class="descBoden"> CONSULTAS </h1>
                 <h2 class="descBoden"> PREGUNTAS FRECUENTES </h2>
@@ -80,72 +80,74 @@
 
             <div class="masDudas">  
 
-                <div>
+                <div class="preForm">
 
-                    <h5 class="descBoden"> ¿TENES MAS DUDAS? </h5>
+                    <div>
+                    <h4 class="descBoden"> <strong> ¿TENES MAS DUDAS? </strong> </h4>
+                    <p class="m-3">Dejanos tu consulta! Completando los datos vamos a poder ponernos en contacto con vos.</p>
+                    </div>
                     
-                    <p>Dejanos tu consulta! Completando los datos vamos a poder ponernos en contacto con vos.</p>
-
                 </div>    
 
-                <form action="" class="masDudas">
+                <div class="container">
 
-                    <div>
-                        <label for="name"> NOMBRE COMPLETO </label>
-                    </div>
+                    <form>
+                        <!-- 2 column grid layout with text inputs for the first and last names -->
+                        <div class="row mb-4">
 
-                    <div>
-                        <input type="text" name="nombre" id="name" placeholder="Nombre y Apellido">
-                    </div>
+                          <div class="col">
+                            <div class="form-outline">
+                              <input type="text" id="form6Example1" class="form-control" />
+                              <label class="form-label" for="form6Example1">NOMBRE</label>
+                            </div>
+                          </div>
 
-                    <div>
-                        <label for="email"> CORREO </label>
-                    </div>
-                    
-                    <div>
-                        <input type="email" name="email" id="email" placeholder="Email">
-                    </div>
+                          <div class="col">
+                            <div class="form-outline">
+                              <input type="text" id="form6Example2" class="form-control" />
+                              <label class="form-label" for="form6Example2">APELLIDO</label>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      
+                        <!-- Text input -->
+                        <div class="form-outline mb-4">
+                          <input type="text" id="form6Example4" class="form-control" />
+                          <label class="form-label" for="form6Example4">DIRECCIÓN</label>
+                        </div>
+                      
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                          <input type="email" id="form6Example5" class="form-control" />
+                          <label class="form-label" for="form6Example5">CORREO</label>
+                        </div>
+                      
+                        <!-- Number input -->
+                        <div class="form-outline mb-4">
+                          <input type="number" id="form6Example6" class="form-control" />
+                          <label class="form-label" for="form6Example6">CELULAR</label>
+                        </div>
+                      
+                        <!-- Message input -->
+                        <div class="form-outline mb-4">
+                          <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+                          <label class="form-label" for="form6Example7">TU CONSULTA</label>
+                        </div>
+                      
+                        <!-- Checkbox -->
+                        <div class="form-check d-flex justify-content-center mb-4">
+                          <input class="form-check-input me-2" type="checkbox" value="" id="form6Example8" checked />
+                          <label class="form-check-label" for="form6Example8"> Querés suscribirte al <strong>NEWSLETTER?</strong>  </label>
+                        </div>
+                      
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-secondary btn-block mb-4">ENVIAR</button>
+                      </form>
 
-                    <div>
-                        <label for="number"> CELULAR</label>
-                    </div>    
-                    
-                    <div>
-                        <input type="number" name="numero" id="number" placeholder="Celular">
-                    </div>
-
-                    <div>
-                        <label for="consulta"> CONSULTA</label>
-                    </div>
-                        
-                    <div>
-                        <textarea name="" id="consulta" cols="30" rows="10" placeholder="Dejanos tu consulta"></textarea>
-                    </div>
-
-                    <div>
-                        <input type="submit" value="Enviar">
-                    </div>
-
-                </form>
+                </div>
 
             </div>  
-
-            <div class="newsletter">
-
-                <h3>NEWSLETTER</h3>
-
-                <h4>Suscribite para recibir novedades!</h4>
-
-                <div>
-                    <label for="mail">Correo</label>
-                    <input type="email" name="mail" id="mail" placeholder="Email">
-                </div>
-
-                <div>
-                    <input type="submit" value="Enviar">
-                </div>
-
-            </div>
 
         </div>
 
@@ -166,7 +168,7 @@
     </footer>
     
     <div>
-        <p class="misDatos"> MANUELA D'AGOSTO - Estudiante de <a class="botonCoder" href="https://www.coderhouse.com/" target="_blank"> <b> CODER HOUSE </b> </a> Comision 37195</p>
+        <p class="misDatos"> MANUELA D'AGOSTO - <a class="botonCoder" href="https://www.coderhouse.com/" target="_blank"> <b> CODER HOUSE </b> </a> Comision 37195</p>
     <div>
 
     <!-- BOOTSTRAP -->
