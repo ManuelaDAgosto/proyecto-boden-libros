@@ -7,7 +7,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- MI CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="images/favicon.png">
     <title> CONSULTAS </title>
 </head>
@@ -49,34 +49,73 @@
 
             <div class="intro">
 
-                <h1 class="descBoden"> CONSULTAS </h1>
-                <h2 class="descBoden"> PREGUNTAS FRECUENTES </h2>
+                <h1 class="descBoden"> <strong> CONSULTAS </strong></h1>
 
             </div>
 
             <div class="pregFrecuentes"> 
 
-                <div class="pregunta">
-                    <p> <strong> ¿Qué es BODEN? </strong> </p> 
-                    <p>BODEN es una suscripción literaria mensual. Suscribiendote vas a recibir un libro por mes en tu casa</p>
+              <div class="preForm">
+              <h2 class="descBoden"> <strong> PREGUNTAS FRECUENTES </strong> </h2>
+              </div>
+
+              <div class="accordion p-3" id="accordionExample">
+                
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <strong> ¿Qué es BODEN? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p> <strong> BODEN </strong> es una suscripción literaria mensual. Suscribiendote vas a recibir un libro por mes en tu casa</p>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="pregunta">
-                    <p> <strong> ¿Me tengo que suscribir todos los meses? </strong> </p>
-                    <p>Si elegiste la opción SUSCRIPCIÓN, no tenes que hacer nada más. El pago se debita automaticamente de la tarjeta que ingresaste todos los meses.</p>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <strong> ¿Me tengo que suscribir todos los meses? </strong> 
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Si elegiste la opción SUSCRIPCIÓN, no tenes que hacer nada más. El pago se debita automaticamente de la tarjeta que ingresaste todos los meses.</p>
                     <p>Si elegiste la opción PROBA UN MES o REGALA, el pago es por una entrega. Si quisieras volver a recibir al mes siguiente, deberas repetir el proceso.</p>
-                </div>    
-
-                <div class="pregunta">
-                    <p> <strong> ¿Cuándo recibo mi suscripción? </strong> </p>
-                    <p>Las entregas las realizamos del 8 al 20 de cada mes. Tenes tiempo hasta el 30/31 del mes anterior para suscribirte y recibir la entrega de ese mes, ya que del 1 al 7 no encargamos de preparar todo los pedidos para despacharlos. Hacemos las entregas entre las 10 y 18hs</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> ¿Cuándo recibo mi suscripción? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Las entregas las realizamos del 8 al 20 de cada mes. Tenes tiempo hasta el 30/31 del mes anterior para suscribirte y recibir la entrega de ese mes, ya que del 1 al 7 no encargamos de preparar todo los pedidos para despacharlos. Hacemos las entregas entre las 10 y 18hs</p>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="pregunta">
-                    <p> <strong> ¿Hacen envíos a todo el país? </strong> </p>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      <strong> ¿Hacen envíos a todo el país? </strong>
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p> <strong> ¿Hacen envíos a todo el país? </strong> </p>
                     <p>Si! Si el domicilio que ingresaste es dentro de CABA, el envío es <strong>GRATUITO</strong>. Para GBA, el costo del envío es por $100. Para el resto del país, el envío hasta el punto de retiro en la provincia que nos indiques tiene un valor de $250.</p>
+                    </div>
+                  </div>
                 </div>
-            </div>
+
+              </div>
 
             <div class="masDudas">  
 
@@ -91,7 +130,7 @@
 
                 <div class="container">
 
-                    <form>
+                    <form class="formConsultas">
                         <!-- 2 column grid layout with text inputs for the first and last names -->
                         <div class="row mb-4">
 
@@ -155,17 +194,20 @@
 
     <footer>
 
-        <div>
-            <h4>REDES SOCIALES</h4>
-            <ul>
-                <li><a href="https://www.facebook.com/" target="_blank"> <img src="images/redes/facebook.png" alt="logo de facebook" class="redes"> </a> </li>
-                <li><a href="https://www.instagram.com/" target="_blank"><img src="images/redes/instagram.png" alt="logo de instagram" class="redes"></a> </li>
-                <li><a href="https://twitter.com" target="_blank"><img src="images/redes/twitter.png" alt="logo de twitter" class="redes"></a> </li>
-                <li><a href="https://www.whatsapp.com/" target="_blank"><img src="images/redes/whatsapp.png" alt="logo de whatsapp" class="redes"></a> </li>
-            </ul> 
-        </div>
+      <div>
 
-    </footer>
+          <h4 class="text-center">REDES SOCIALES</h4>
+
+          <ul class="p-0">
+              <li><a href="https://www.facebook.com/" target="_blank"> <img src="images/redes/facebook.png" alt="logo de facebook" class="redes"> </a> </li>
+              <li><a href="https://www.instagram.com/" target="_blank"><img src="images/redes/instagram.png" alt="logo de instagram" class="redes"></a> </li>
+              <li><a href="https://twitter.com" target="_blank"><img src="images/redes/twitter.png" alt="logo de twitter" class="redes"></a> </li>
+              <li><a href="https://www.whatsapp.com/" target="_blank"><img src="images/redes/whatsapp.png" alt="logo de whatsapp" class="redes"></a> </li>
+          </ul> 
+          
+      </div>
+
+  </footer>
     
     <div>
         <p class="misDatos"> MANUELA D'AGOSTO - <a class="botonCoder" href="https://www.coderhouse.com/" target="_blank"> <b> CODER HOUSE </b> </a> Comision 37195</p>

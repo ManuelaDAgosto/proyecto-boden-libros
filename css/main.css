@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+html {
+  font-size: 62.5%; /*1 rem = 10px*/
+  line-height: 3rem; /* interlineado*/
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #ffffff;
+}
+
+.bg-pale {
+  background-color: #E9E9AF;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  background-color: #E9E9AF;
+  text-align: center;
+}
+
+.descBoden, .h2index {
+  background-color: white;
+  width: fit-content;
+  padding: 1rem;
+  margin: 1rem;
+  border-color: #000;
+  border-style: solid;
+}
+
+.mainSuscripciones {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedorSuscripciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.boxSuscripcion {
+  border: solid;
+  background-color: #f5f5dc;
+  height: fit-content;
+  width: 30%;
+}
+
+.lomos {
+  width: 80%;
+  padding-top: 2rem;
+}
+
+.divLibros {
+  padding: 1rem;
+  line-height: 2rem;
+}
+
+.titulo {
+  padding: 1rem;
+}
+
+.mainCLub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sectionClub {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionClub img {
+  padding: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.masOpiniones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.opiniones {
+  background-color: #E9E9AF;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+/* GRID CLUB */
+.tuOpinion {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 2 fr 1fr;
+  grid-template-areas: "nombre" "name" "tituloOp" "opinion" "enviar";
+  grid-gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nombre {
+  grid-area: nombre;
+}
+
+#name {
+  grid-area: name;
+}
+
+.tituloOpinion {
+  grid-area: tituloOp;
+}
+
+#opinion {
+  grid-area: opinion;
+}
+
+.enviar {
+  grid-area: enviar;
+}
+
+.mainConsultas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pregFrecuentes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.pregunta {
+  background-color: #E9E9AF;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.preForm {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.preForm .descBoden {
+  width: 100%;
+  text-align: center;
+}
+
+.accordion-button {
+  font-size: inherit;
+}
+
+.accordion-button:not(.collapsed) {
+  color: inherit;
+  background-color: #E9E9AF;
+}
+
+.accordion-button:focus {
+  box-shadow: inherit;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #E9E9AF;
+}
+
+footer div ul li {
+  display: inline-block;
+}
+
+.redes {
+  height: 3rem;
+  width: 3rem;
+}
+
+.misDatos {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */

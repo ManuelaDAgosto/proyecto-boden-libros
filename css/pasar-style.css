@@ -216,10 +216,24 @@ footer div ul li{
     justify-content: center;
 }
 
-.preForm h4{
+.preForm .descBoden{
     width: 100%;
     text-align: center;
 }
+
+.accordion-button{ 
+    font-size: inherit;
+}
+
+.accordion-button:not(.collapsed) {
+    color: inherit;
+    background-color: #E9E9AF;
+}
+
+.accordion-button:focus {
+    box-shadow: inherit;
+}
+
 
 /* DESKTOP */
 

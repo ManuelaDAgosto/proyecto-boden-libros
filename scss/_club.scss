@@ -1,0 +1,68 @@
+.mainCLub{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sectionClub{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.sectionClub img{
+padding: 2rem;
+padding-bottom: 0.5rem;
+}
+
+.masOpiniones{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.opiniones{
+background-color: $mainColor;
+margin: 1rem; 
+padding: 1rem;   
+}
+
+/* GRID CLUB */
+
+.tuOpinion{
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 1fr 1fr 2 fr 1fr;
+grid-template-areas: 
+"nombre"
+"name"
+"tituloOp"
+"opinion"
+"enviar";
+grid-gap: 1rem;
+justify-items: center;
+align-items: center;
+padding: 1rem;
+}
+
+.nombre{
+grid-area: nombre;
+}
+
+#name{
+grid-area: name;
+}
+
+.tituloOpinion{
+grid-area: tituloOp;
+}
+
+#opinion{
+grid-area: opinion;
+}
+
+.enviar{
+grid-area: enviar;
+}

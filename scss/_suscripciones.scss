@@ -1,0 +1,23 @@
+.mainSuscripciones{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorSuscripciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.boxSuscripcion{
+    border: solid;
+    background-color: $third-color;
+    height: fit-content;
+    width: 30%;
+}
+
+.lomos{
+    width: 80%;
+    padding-top: 2rem;
+}

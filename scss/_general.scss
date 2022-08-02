@@ -1,0 +1,13 @@
+html{
+    font-size: 62.5%; /*1 rem = 10px*/
+    line-height: 3rem; /* interlineado*/
+}
+
+body{
+    font-size: 1.6rem;
+    background-color: $bg-color;
+}
+
+.bg-pale{
+    background-color: $mainColor;
+}

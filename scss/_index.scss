@@ -1,0 +1,19 @@
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: $w-100;
+    height: fit-content;
+    background-color: $mainColor;
+    text-align: center;
+}
+
+.descBoden, .h2index{
+    background-color: white;
+    width: fit-content;
+    padding: 1rem;
+    margin: 1rem;
+    border-color: #000;
+    border-style: solid;
+}
