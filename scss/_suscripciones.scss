@@ -5,7 +5,7 @@
 
 .contenedorSuscripciones{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
 }
@@ -20,4 +20,19 @@
 .lomos{
     width: 80%;
     padding-top: 2rem;
+}
+
+@media only screen and (min-width: 1200px){
+
+    .contenedorSuscripciones{
+        width: $w-100;
+        @include d-flex(center, center, row);
+    }
+
+    .boxSuscripcion{
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
 }

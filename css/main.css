@@ -23,9 +23,9 @@ header {
 
 .intro {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
   height: fit-content;
   background-color: #E9E9AF;
@@ -33,7 +33,7 @@ header {
 }
 
 .descBoden, .h2index {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   width: fit-content;
   padding: 1rem;
   margin: 1rem;
@@ -41,6 +41,51 @@ header {
   border-style: solid;
 }
 
+.h2index {
+  margin: 1rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  .gridIndex {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "horda balada viento cielo coronel salvatierra uruguaya rio";
+    justify-items: center;
+    align-items: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  /* GRID AREAS DEL INDEX */
+  .tapaHorda {
+    grid-area: horda;
+  }
+  .tapaBalada {
+    grid-area: balada;
+  }
+  .tapaViento {
+    grid-area: viento;
+  }
+  .tapaCielo {
+    grid-area: cielo;
+  }
+  .tapaCoronel {
+    grid-area: coronel;
+  }
+  .tapaSalvatierra {
+    grid-area: salvatierra;
+  }
+  .tapaUruguaya {
+    grid-area: uruguaya;
+  }
+  .tapaRio {
+    grid-area: rio;
+  }
+  .tapa:hover {
+    transform: translateY(-20px);
+  }
+  /*MOVER PARA QUE SEA ANTES DE 1200*/
+}
 .mainSuscripciones {
   display: flex;
   flex-direction: column;
@@ -48,7 +93,7 @@ header {
 
 .contenedorSuscripciones {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
 }
@@ -65,6 +110,18 @@ header {
   padding-top: 2rem;
 }
 
+@media only screen and (min-width: 1200px) {
+  .contenedorSuscripciones {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .boxSuscripcion:hover {
+    transform: scale(1.1);
+  }
+}
 .divLibros {
   padding: 1rem;
   line-height: 2rem;
@@ -82,9 +139,9 @@ header {
 
 .sectionClub {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
 
 .sectionClub img {
@@ -94,9 +151,9 @@ header {
 
 .masOpiniones {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .opiniones {
@@ -137,6 +194,28 @@ header {
   grid-area: enviar;
 }
 
+@media only screen and (min-width: 1200px) {
+  .sectionClub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .tuOpinion {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+  }
+  .masOpiniones {
+    padding-bottom: 2rem;
+  }
+  .opiniones {
+    width: 70%;
+  }
+  .opiniones:hover {
+    transform: scale(1.2);
+  }
+}
 .mainConsultas {
   display: flex;
   flex-direction: column;
@@ -158,11 +237,12 @@ header {
 
 .preForm {
   display: flex;
-  align-content: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
-.preForm .descBoden {
+.preForm .descBoden, .preForm .h2index {
   width: 100%;
   text-align: center;
 }
@@ -183,7 +263,8 @@ header {
 footer {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+  flex-direction: row;
   background-color: #E9E9AF;
 }
 

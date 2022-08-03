@@ -1,7 +1,5 @@
 footer{
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    @include d-flex(center, center, row);
     background-color: $mainColor;
 }
 

@@ -18,9 +18,7 @@
 }
 
 .preForm{
-    display: flex;
-    align-content: center;
-    justify-content: center;
+    @include d-flex(center, center, row);
 }
 
 .preForm .descBoden{

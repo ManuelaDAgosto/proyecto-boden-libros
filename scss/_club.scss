@@ -5,22 +5,16 @@
 }
 
 .sectionClub{
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+    @include d-flex(center, center, row)
 }
 
 .sectionClub img{
-padding: 2rem;
-padding-bottom: 0.5rem;
+    padding: 2rem;
+    padding-bottom: 0.5rem;
 }
 
 .masOpiniones{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+    @include d-flex(center, center, column)
 }
 
 .opiniones{
@@ -65,4 +59,32 @@ grid-area: opinion;
 
 .enviar{
 grid-area: enviar;
+}
+
+@media only screen and (min-width: 1200px){
+
+    .sectionClub{
+        @include d-flex(center, center, row)
+    }
+
+    .tuOpinion{
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .masOpiniones{
+        padding-bottom: 2rem;
+    }
+
+    .opiniones{
+        width: 70%;
+    }
+
+    .opiniones{
+        &:hover{
+            transform: scale(1.2);
+        }
+    }    
+
 }

@@ -41,7 +41,7 @@ nav ul li a:hover{
 footer{
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     background-color: #E9E9AF;
 }
 
@@ -212,7 +212,7 @@ footer div ul li{
 
 .preForm{
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
 }
 
