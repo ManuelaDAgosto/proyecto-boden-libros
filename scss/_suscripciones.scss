@@ -14,11 +14,11 @@
     border: solid;
     background-color: $third-color;
     height: fit-content;
-    width: 30%;
+    width: map-get($map: $width, $key: "treinta");
 }
 
 .lomos{
-    width: 80%;
+    width: map-get($map: $width, $key: "ochenta");
     padding-top: 2rem;
 }
 

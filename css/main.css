@@ -216,16 +216,13 @@ header {
     transform: scale(1.2);
   }
 }
-.mainConsultas {
+.mainConsultas, .pregFrecuentes {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .pregFrecuentes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding: 1rem;
 }
 

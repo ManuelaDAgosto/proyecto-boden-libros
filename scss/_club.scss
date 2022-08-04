@@ -78,7 +78,7 @@ grid-area: enviar;
     }
 
     .opiniones{
-        width: 70%;
+        width: map-get($map: $width, $key: "setenta");
     }
 
     .opiniones{

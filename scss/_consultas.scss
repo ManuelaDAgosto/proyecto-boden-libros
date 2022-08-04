@@ -5,9 +5,7 @@
 }
 
 .pregFrecuentes{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @extend .mainConsultas;
     padding: 1rem;
 }
 
