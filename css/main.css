@@ -18,8 +18,6 @@ body {
   width: 90%;
   padding: 1rem;
   margin: 1rem;
-  border-color: #000;
-  border-style: solid;
 }
 
 .intro {
@@ -33,12 +31,39 @@ body {
   text-align: center;
 }
 
+.boton {
+  background-color: #E9E9AF;
+  width: 90%;
+  width: fit-content;
+}
+.boton:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
+.botonCoder {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: #000;
+  font-weight: bold;
+}
+
 header {
   position: sticky;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1;
+}
+
+nav ul li a:hover {
+  font-weight: bold;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -142,7 +167,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .sectionClub img {
@@ -195,13 +220,15 @@ header {
   grid-area: enviar;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
   .sectionClub {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
   }
+}
+@media only screen and (min-width: 1200px) {
   .tuOpinion {
     display: flex;
     flex-direction: column;

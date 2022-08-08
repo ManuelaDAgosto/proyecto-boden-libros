@@ -5,3 +5,9 @@ header{
     width: $w-100;
     z-index: 1;
 }
+
+nav ul li a{
+    &:hover{
+        font-weight: bold;
+    }
+}

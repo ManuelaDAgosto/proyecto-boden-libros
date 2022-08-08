@@ -5,7 +5,7 @@
 }
 
 .sectionClub{
-    @include d-flex(center, center, row)
+    @include d-flex(center, center, column)
 }
 
 .sectionClub img{
@@ -61,11 +61,17 @@ grid-area: opinion;
 grid-area: enviar;
 }
 
-@media only screen and (min-width: 1200px){
-
+@media only screen and (min-width: 768px) {
+    
     .sectionClub{
         @include d-flex(center, center, row)
     }
+
+}
+
+@media only screen and (min-width: 1200px){
+
+    
 
     .tuOpinion{
         display: flex;
