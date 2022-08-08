@@ -13,12 +13,13 @@ body {
   background-color: #E9E9AF;
 }
 
-header {
-  position: sticky;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1;
+.descBoden {
+  background-color: #E9E9AF;
+  width: 90%;
+  padding: 1rem;
+  margin: 1rem;
+  border-color: #000;
+  border-style: solid;
 }
 
 .intro {
@@ -28,21 +29,16 @@ header {
   flex-direction: column;
   width: 100%;
   height: fit-content;
-  background-color: #E9E9AF;
+  background-color: #ffffff;
   text-align: center;
 }
 
-.descBoden, .h2index {
-  background-color: rgb(255, 255, 255);
-  width: fit-content;
-  padding: 1rem;
-  margin: 1rem;
-  border-color: #000;
-  border-style: solid;
-}
-
-.h2index {
-  margin: 1rem;
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -84,7 +80,6 @@ header {
   .tapa:hover {
     transform: translateY(-20px);
   }
-  /*MOVER PARA QUE SEA ANTES DE 1200*/
 }
 .mainSuscripciones {
   display: flex;
@@ -111,8 +106,14 @@ header {
 }
 
 @media only screen and (min-width: 1200px) {
+  .mainSuscripciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
   .contenedorSuscripciones {
-    width: 100%;
+    width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -239,7 +240,7 @@ header {
   flex-direction: row;
 }
 
-.preForm .descBoden, .preForm .h2index {
+.preForm .descBoden {
   width: 100%;
   text-align: center;
 }

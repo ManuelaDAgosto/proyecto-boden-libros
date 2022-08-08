@@ -24,8 +24,12 @@
 
 @media only screen and (min-width: 1200px){
 
+    .mainSuscripciones{
+        @include d-flex(center, center, column)
+    }
+
     .contenedorSuscripciones{
-        width: $w-100;
+        width: 95%;
         @include d-flex(center, center, row);
     }
 

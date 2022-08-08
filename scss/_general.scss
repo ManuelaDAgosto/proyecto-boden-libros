@@ -11,3 +11,20 @@ body{
 .bg-pale{
     background-color: $mainColor;
 }
+
+.descBoden{
+    background-color: $mainColor;
+    width: 90%;
+    padding: 1rem;
+    margin: 1rem;
+    border-color: $black;
+    border-style: solid;
+}
+
+.intro{
+    @include d-flex(center, center, column);
+    width: $w-100;
+    height: fit-content;
+    background-color: $bg-color;
+    text-align: center;
+}

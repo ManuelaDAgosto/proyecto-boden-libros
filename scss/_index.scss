@@ -1,25 +1,3 @@
-.intro{
-    @include d-flex(center, center, column);
-    width: $w-100;
-    height: fit-content;
-    background-color: $mainColor;
-    text-align: center;
-}
-
-.descBoden{
-    background-color: $white;
-    width: fit-content;
-    padding: 1rem;
-    margin: 1rem;
-    border-color: $black;
-    border-style: solid;
-}
-
-.h2index{
-    @extend .descBoden;
-    margin: 1rem;
-}
-
 @media only screen and (min-width: 1200px){
 
     .gridIndex{
@@ -72,5 +50,5 @@
             &:hover{
                  transform: translateY(-20px);
             }
-        } /*MOVER PARA QUE SEA ANTES DE 1200*/    
+        }    
 }
