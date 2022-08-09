@@ -1,3 +1,13 @@
+@media only screen and (min-width: 768px){
+
+    .tapa{
+        &:hover{
+             transform: translateY(-20px);
+        }
+    }
+
+}
+
 @media only screen and (min-width: 1200px){
 
     .gridIndex{
@@ -46,9 +56,5 @@
             grid-area: rio;
         }
     
-        .tapa{
-            &:hover{
-                 transform: translateY(-20px);
-            }
-        }    
+  
 }

@@ -15,8 +15,8 @@ body{
 .descBoden{
     background-color: $mainColor;
     width: 90%;
-    padding: 1rem;
-    margin: 1rem;
+    padding: 3rem;
+    margin: 3rem;
 }
 
 .intro{
@@ -49,4 +49,8 @@ a{
         font-weight: bold;
         }
 
+}
+
+.mainError{
+    background-color: $black;
 }
