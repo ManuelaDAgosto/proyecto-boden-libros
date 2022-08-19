@@ -25,32 +25,16 @@ body{
     height: fit-content;
     background-color: $bg-color;
     text-align: center;
-}
-
-.boton{
-    background-color: $mainColor;
-    width: 90%;
-    &:hover{
-        transform: scale(1.1);
-        font-weight: bold;
-    }
-    width: fit-content;
-}
-
-.botonCoder{
-    text-decoration: none;
-}
-
-a{
-    text-decoration: none;
-    color: inherit;
-    &:hover{
-        color: $black;
-        font-weight: bold;
-        }
-
+    color: $white;
 }
 
 .mainError{
     background-color: $black;
 }
+
+.destaque{
+    color: $third-color;
+}
+
+
+

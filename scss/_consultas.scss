@@ -31,6 +31,7 @@
 .accordion-button:not(.collapsed) {
     color: inherit;
     background-color: $mainColor;
+    color: $white
 }
 
 .accordion-button:focus {

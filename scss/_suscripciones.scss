@@ -12,7 +12,7 @@
 
 .boxSuscripcion{
     border: solid;
-    background-color: $third-color;
+    background-color: $bg-color;
     height: fit-content;
     width: map-get($map: $width, $key: "treinta");
 }

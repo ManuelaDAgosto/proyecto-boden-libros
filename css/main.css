@@ -1,44 +1,19 @@
+/*$mainColor: #E9E9AF;
+$bg-color: #ffffff;
+$third-color: #f5f5dc;*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
-html {
-  font-size: 62.5%; /*1 rem = 10px*/
-  line-height: 3rem; /* interlineado*/
-}
-
-body {
-  font-size: 1.6rem;
-  background-color: #ffffff;
-}
-
-.bg-pale {
-  background-color: #E9E9AF;
-}
-
-.descBoden {
-  background-color: #E9E9AF;
-  width: 90%;
-  padding: 3rem;
-  margin: 3rem;
-}
-
-.intro {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: fit-content;
-  background-color: #ffffff;
-  text-align: center;
-}
-
 .boton {
-  background-color: #E9E9AF;
+  background-color: #000;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
   width: 90%;
   width: fit-content;
 }
 .boton:hover {
   transform: scale(1.1);
   font-weight: bold;
+  background-color: #ff5900;
+  color: #000;
 }
 
 .botonCoder {
@@ -54,8 +29,89 @@ a:hover {
   font-weight: bold;
 }
 
+.pruebaBoton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  background: #000;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease all;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.pruebaBoton a {
+  position: relative;
+  z-index: 2;
+  transition: 0.3s ease all;
+}
+
+.pruebaBoton::after {
+  content: "";
+  width: 100%;
+  height: 300px;
+  background: #ff5900;
+  position: absolute;
+  z-index: 1;
+  top: -300px;
+  left: 0;
+  transition: 0.4s ease-in-out all;
+  border-radius: 0px 0px 200px 200px;
+  color: #000;
+}
+
+.pruebaBoton:hover::after {
+  top: 0;
+}
+
+html {
+  font-size: 62.5%; /*1 rem = 10px*/
+  line-height: 3rem; /* interlineado*/
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #ffffff;
+}
+
+.bg-pale {
+  background-color: #000000;
+}
+
+.descBoden {
+  background-color: #000000;
+  width: 90%;
+  padding: 3rem;
+  margin: 3rem;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  background-color: #ffffff;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
 .mainError {
   background-color: #000;
+}
+
+.destaque {
+  color: #ff5900;
 }
 
 header {
@@ -63,11 +119,14 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 10;
 }
 
+nav ul li a {
+  color: rgb(255, 255, 255);
+}
 nav ul li a:hover {
-  font-weight: bold;
+  color: #ff5900;
 }
 
 @media only screen and (min-width: 768px) {
@@ -126,7 +185,7 @@ nav ul li a:hover {
 
 .boxSuscripcion {
   border: solid;
-  background-color: #f5f5dc;
+  background-color: #ffffff;
   height: fit-content;
   width: 30%;
 }
@@ -189,9 +248,10 @@ nav ul li a:hover {
 }
 
 .opiniones {
-  background-color: #E9E9AF;
+  background-color: #000000;
   margin: 1rem;
   padding: 1rem;
+  color: rgb(255, 255, 255);
 }
 
 /* GRID CLUB */
@@ -261,7 +321,7 @@ nav ul li a:hover {
 }
 
 .pregunta {
-  background-color: #E9E9AF;
+  background-color: #000000;
   margin: 1rem;
   padding: 1rem;
 }
@@ -284,7 +344,8 @@ nav ul li a:hover {
 
 .accordion-button:not(.collapsed) {
   color: inherit;
-  background-color: #E9E9AF;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
 }
 
 .accordion-button:focus {
@@ -296,7 +357,8 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  background-color: #E9E9AF;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
 }
 
 footer div ul li {

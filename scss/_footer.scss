@@ -1,6 +1,7 @@
 footer{
     @include d-flex(center, center, row);
     background-color: $mainColor;
+    color: $white;
 }
 
 footer div ul li{
