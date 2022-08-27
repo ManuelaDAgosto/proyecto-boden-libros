@@ -1,19 +1,19 @@
-footer{
-    @include d-flex(center, center, row);
-    background-color: $mainColor;
-    color: $white;
+footer {
+  @include d-flex(center, center, row);
+  background-color: $mainColor;
+  color: $white;
 }
 
-footer div ul li{
-    display: inline-block;
+footer div ul li {
+  display: inline-block;
 }
 
-.redes{
-    height: 3rem;
-    width: 3rem;
+.redes {
+  height: 3rem;
+  width: 3rem;
 }
 
-.misDatos{
-    font-size: 1.4rem;
-    text-align: center;
+.misDatos {
+  font-size: 1.4rem;
+  text-align: center;
 }

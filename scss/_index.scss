@@ -1,60 +1,64 @@
-@media only screen and (min-width: 768px){
-
-    .tapa{
-        &:hover{
-             transform: translateY(-20px);
-        }
-    }
-
+.proceso {
+  @include d-flex(space-around, center, column);
 }
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 992px) {
+  .proceso {
+    @include d-flex(space-around, center, row);
+  }
+}
 
-    .gridIndex{
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "horda balada viento cielo coronel salvatierra uruguaya rio";
-        justify-items: center;
-        align-items: center;
-        padding: 2rem;
-        margin-bottom: 2rem;
-    }    
+@media only screen and (min-width: 768px) {
+  .tapa {
+    &:hover {
+      transform: translateY(-20px);
+    }
+  }
+}
 
-         /* GRID AREAS DEL INDEX */
+@media only screen and (min-width: 1200px) {
+  .gridIndex {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "horda balada viento cielo coronel salvatierra uruguaya rio";
+    justify-items: center;
+    align-items: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
 
-        .tapaHorda{
-            grid-area: horda;
-        }
-    
-        .tapaBalada{
-            grid-area: balada;
-        }
-    
-        .tapaViento{
-            grid-area: viento;
-        }
-    
-        .tapaCielo{
-            grid-area: cielo;
-        }
-    
-        .tapaCoronel{
-            grid-area: coronel;
-        }
-    
-        .tapaSalvatierra{
-            grid-area: salvatierra;
-        }
-    
-        .tapaUruguaya{
-            grid-area: uruguaya;
-        }
-    
-        .tapaRio{
-            grid-area: rio;
-        }
-    
-  
+  /* GRID AREAS DEL INDEX */
+
+  .tapaHorda {
+    grid-area: horda;
+  }
+
+  .tapaBalada {
+    grid-area: balada;
+  }
+
+  .tapaViento {
+    grid-area: viento;
+  }
+
+  .tapaCielo {
+    grid-area: cielo;
+  }
+
+  .tapaCoronel {
+    grid-area: coronel;
+  }
+
+  .tapaSalvatierra {
+    grid-area: salvatierra;
+  }
+
+  .tapaUruguaya {
+    grid-area: uruguaya;
+  }
+
+  .tapaRio {
+    grid-area: rio;
+  }
 }

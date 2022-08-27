@@ -1,42 +1,40 @@
-.mainSuscripciones{
-    display: flex;
-    flex-direction: column;
+.mainSuscripciones {
+  display: flex;
+  flex-direction: column;
 }
 
-.contenedorSuscripciones{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+.contenedorSuscripciones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
-.boxSuscripcion{
-    border: solid;
-    background-color: $bg-color;
-    height: fit-content;
-    width: map-get($map: $width, $key: "treinta");
+.boxSuscripcion {
+  border: solid;
+  background-color: $bg-color;
+  height: fit-content;
+  width: map-get($map: $width, $key: "treinta");
 }
 
-.lomos{
-    width: map-get($map: $width, $key: "ochenta");
-    padding-top: 2rem;
+.lomos {
+  width: map-get($map: $width, $key: "ochenta");
+  padding-top: 2rem;
 }
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1200px) {
+  .mainSuscripciones {
+    @include d-flex(center, center, column);
+  }
 
-    .mainSuscripciones{
-        @include d-flex(center, center, column)
+  .contenedorSuscripciones {
+    width: 95%;
+    @include d-flex(center, center, row);
+  }
+
+  .boxSuscripcion {
+    &:hover {
+      transform: scale(1.1);
     }
-
-    .contenedorSuscripciones{
-        width: 95%;
-        @include d-flex(center, center, row);
-    }
-
-    .boxSuscripcion{
-        &:hover{
-            transform: scale(1.1);
-        }
-    }
-
+  }
 }

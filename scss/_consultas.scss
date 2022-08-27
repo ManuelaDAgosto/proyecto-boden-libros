@@ -1,40 +1,39 @@
-.mainConsultas{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.mainConsultas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.pregFrecuentes{
-    @extend .mainConsultas;
-    padding: 1rem;
+.pregFrecuentes {
+  @extend .mainConsultas;
+  padding: 1rem;
 }
 
-.pregunta{
-    background-color: $mainColor;
-    margin: 1rem; 
-    padding: 1rem;
+.pregunta {
+  background-color: $mainColor;
+  margin: 1rem;
+  padding: 1rem;
 }
 
-.preForm{
-    @include d-flex(center, center, row);
+.preForm {
+  @include d-flex(center, center, row);
 }
 
-.preForm .descBoden{
-    width: $w-100;
-    text-align: center;
+.preForm .descBoden {
+  width: $w-100;
+  text-align: center;
 }
 
-.accordion-button{ 
-    font-size: inherit;
+.accordion-button {
+  font-size: inherit;
 }
 
 .accordion-button:not(.collapsed) {
-    color: inherit;
-    background-color: $mainColor;
-    color: $white
+  color: inherit;
+  background-color: $mainColor;
+  color: $white;
 }
 
 .accordion-button:focus {
-    box-shadow: inherit;
+  box-shadow: inherit;
 }
-

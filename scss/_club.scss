@@ -1,97 +1,91 @@
-.mainCLub{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.mainCLub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.sectionClub{
-    @include d-flex(center, center, column)
+.sectionClub {
+  @include d-flex(center, center, column);
 }
 
-.sectionClub img{
-    padding: 2rem;
-    padding-bottom: 0.5rem;
+.sectionClub img {
+  padding: 2rem;
+  padding-bottom: 0.5rem;
 }
 
-.masOpiniones{
-    @include d-flex(center, center, column)
+.masOpiniones {
+  @include d-flex(center, center, column);
 }
 
-.opiniones{
-    background-color: $mainColor;
-    margin: 1rem; 
-    padding: 1rem;   
-    color: $white;
+.opiniones {
+  background-color: $mainColor;
+  margin: 1rem;
+  padding: 1rem;
+  color: $white;
 }
 
 /* GRID CLUB */
 
-.tuOpinion{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 2 fr 1fr;
-    grid-template-areas: 
+.tuOpinion {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 2 fr 1fr;
+  grid-template-areas:
     "nombre"
     "name"
     "tituloOp"
     "opinion"
     "enviar";
-    grid-gap: 1rem;
-    justify-items: center;
-    align-items: center;
-    padding: 1rem;
+  grid-gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  padding: 1rem;
 }
 
-.nombre{
-    grid-area: nombre;
+.nombre {
+  grid-area: nombre;
 }
 
-#name{
-    grid-area: name;
+#name {
+  grid-area: name;
 }
 
-.tituloOpinion{
-    grid-area: tituloOp;
+.tituloOpinion {
+  grid-area: tituloOp;
 }
 
-#opinion{
-    grid-area: opinion;
+#opinion {
+  grid-area: opinion;
 }
 
-.enviar{
-    grid-area: enviar;
+.enviar {
+  grid-area: enviar;
 }
 
 @media only screen and (min-width: 768px) {
-    
-    .sectionClub{
-        @include d-flex(center, center, row)
-    }
-
+  .sectionClub {
+    @include d-flex(center, center, row);
+  }
 }
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1200px) {
+  .tuOpinion {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+  }
 
-    
+  .masOpiniones {
+    padding-bottom: 2rem;
+  }
 
-    .tuOpinion{
-        display: flex;
-        flex-direction: column;
-        align-items: normal;
+  .opiniones {
+    width: map-get($map: $width, $key: "setenta");
+  }
+
+  .opiniones {
+    &:hover {
+      transform: scale(1.2);
     }
-
-    .masOpiniones{
-        padding-bottom: 2rem;
-    }
-
-    .opiniones{
-        width: map-get($map: $width, $key: "setenta");
-    }
-
-    .opiniones{
-        &:hover{
-            transform: scale(1.2);
-        }
-    }    
-
+  }
 }

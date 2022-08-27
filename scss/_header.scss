@@ -1,14 +1,17 @@
-header{
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: $w-100;
-    z-index: 10;
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: $w-100;
+  z-index: 10;
 }
 
-nav ul li a{
-    color: $white;
-    &:hover{
-        color: $third-color;
-    }
+nav ul li a {
+  color: $white;
+  &:hover {
+    color: $third-color;
+    text-decoration: underline;
+    text-decoration-color: $third-color;
+    text-decoration-thickness: 5px;
+  }
 }

@@ -1,40 +1,37 @@
-html{
-    font-size: 62.5%; /*1 rem = 10px*/
-    line-height: 3rem; /* interlineado*/
+html {
+  font-size: 62.5%; /*1 rem = 10px*/
+  line-height: 3rem; /* interlineado*/
 }
 
-body{
-    font-size: 1.6rem;
-    background-color: $bg-color;
+body {
+  font-size: 1.6rem;
+  background-color: $bg-color;
 }
 
-.bg-pale{
-    background-color: $mainColor;
+.bg-pale {
+  background-color: $mainColor;
 }
 
-.descBoden{
-    background-color: $mainColor;
-    width: 90%;
-    padding: 3rem;
-    margin: 3rem;
+.descBoden {
+  background-color: $mainColor;
+  width: 90%;
+  padding: 3rem;
+  margin: 3rem;
 }
 
-.intro{
-    @include d-flex(center, center, column);
-    width: $w-100;
-    height: fit-content;
-    background-color: $bg-color;
-    text-align: center;
-    color: $white;
+.intro {
+  @include d-flex(center, center, column);
+  width: $w-100;
+  height: fit-content;
+  background-color: $bg-color;
+  text-align: center;
+  color: $white;
 }
 
-.mainError{
-    background-color: $black;
+.mainError {
+  background-color: $bg-color;
 }
 
-.destaque{
-    color: $third-color;
+.destaque {
+  color: $third-color;
 }
-
-
-
